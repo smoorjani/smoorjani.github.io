@@ -1,7 +1,7 @@
 ---
-title: "Portfolio item number 1"
-excerpt: "Short description of portfolio item number 1<br/><img src='/images/500x300.png'>"
+title: "LA Crime Analysis"
+excerpt: "Visualizing crime in Los Angeles <br/><img src='/images/la_crime.png'>"
 collection: portfolio
 ---
 
-This is an item in your portfolio. It can be have images or nice text. If you name the file .md, it will be parsed as markdown. If you name the file .html, it will be parsed as HTML. 
+A project that visually explores trends in Los Angeles crime. You can view the [presentation](https://docs.google.com/presentation/d/1HvCtk0w41CW8yyg67lX4xcbRx_y-3ERLgdNIgjgxdbY/edit?usp=sharing) or the [Github repo](https://github.com/smoorjani/LA-Crime-Analysis).
