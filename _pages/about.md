@@ -20,9 +20,9 @@ I have also been working in the [IMPACT group](http://impact.crhc.illinois.edu/)
 
 Previous Experience
 ======
-This past summer, I interned at Meta on the Ads Responsibility and Privacy team under Minxing Liu. I worked on improving multimodal ad classificaiton using hierarchical multi-label classification methods. Previously, I interned at Facebook on the AI Commerce Multimodal team under Yu (Hugo) Chen and at Capital One on the NLP services team. 
+This past summer, I interned at [Meta](https://www.meta.com/) on the Ads Responsibility and Privacy team under [Minxing Liu](https://www.linkedin.com/in/1993-minxing-liu/). I worked on improving multimodal ad classificaiton using hierarchical multi-label classification methods. Previously, I interned at [Facebook](https://www.facebook.com/) on the AI Commerce Multimodal team under [Yu (Hugo) Chen](http://academic.hugochan.net/) and at [Capital One](https://www.capitalone.com/) on the NLP services team. 
 
-News
+Timeline
 ======
 **Sept 2022:** Serving as subreviewer for [WSDM 2022](https://www.wsdm-conference.org/2022/).
 
@@ -34,7 +34,7 @@ News
 
 **May 2022:** Serving as subreviewer for [CIKM 2022](https://www.cikm2022.org/).
 
-**April 2022:** Accepted UIUC CS MS offer. Joining in Fall 2022.
+**April 2022:** Accepted UIUC CS MS offer! Joining in Fall 2022.
 
 **May 2021:** Summer at [Meta](https://www.meta.com/).
 
