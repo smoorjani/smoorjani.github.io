@@ -10,6 +10,8 @@ redirect_from:
 
 I am a MS student in Computer Science at [UIUC](https://illinois.edu/) advised by [Hari Sundaram](http://sundaram.cs.illinois.edu/). I graduated from UIUC with a Bachelor's in Computer Science. I am broadly interested in natural language generation, specifically the control of particular aspects of generated text. My recent work involves infusing styles that are not quantifiable (e.g. memorability, persuasion) into text.
 
+See my updated resume [here](https://docs.google.com/document/d/19UJ3voazJUr8UzZZLHy5K9lLix1CSU6U7LB_RrSOP6U/edit#).
+
 Research
 ======
 I have been working with [Hari Sundaram](http://sundaram.cs.illinois.edu/) in the [Crowd Dynamics Lab](https://crowddynamicslab.github.io/) since May 2021. We operate at the intersection of natural langauge processing and advertising theory. Broadly, we hope to be able to generate more appealing and interpretable science to combat the spread of scientific misinformation.
@@ -18,7 +20,7 @@ I have also been working in the [IMPACT group](http://impact.crhc.illinois.edu/)
 
 Previous Experience
 ======
-This past summer, I interned at Meta on the Ads Responsibility and Privacy team under Minxing Liu. I worked on improving multimodal ad classificaiton using hierarchical multi-label classification methods. Previously, I interned at Facebook on the AI Commerce Multimodal team under Yu (Hugo) Chen and at Capital One on the NLP services team.
+This past summer, I interned at Meta on the Ads Responsibility and Privacy team under Minxing Liu. I worked on improving multimodal ad classificaiton using hierarchical multi-label classification methods. Previously, I interned at Facebook on the AI Commerce Multimodal team under Yu (Hugo) Chen and at Capital One on the NLP services team. 
 
 News
 ======
