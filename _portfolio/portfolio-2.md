@@ -1,6 +1,6 @@
 ---
 title: "Computer Vision Rock Paper Scissors"
-excerpt: "Submitted for PackHacks 2019 <br/><img src='/images/rps.png'>"
+excerpt: "Submitted for PackHacks 2019"
 collection: portfolio
 ---
 

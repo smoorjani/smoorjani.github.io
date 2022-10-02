@@ -1,7 +1,7 @@
 ---
-title: "LA Crime Analysis"
-excerpt: "Visualizing crime in Los Angeles <br/><img src='/images/la_crime.png'>"
+title: "Chrome Dino Genetic Algorithm"
+excerpt: "A relatively simple artificial intelligence to play Chrome Dino <br/><img src='/images/dino_demo.gif'>"
 collection: portfolio
 ---
 
-A project that visually explores trends in Los Angeles crime. You can view the [presentation](https://docs.google.com/presentation/d/1HvCtk0w41CW8yyg67lX4xcbRx_y-3ERLgdNIgjgxdbY/edit?usp=sharing) or the [Github repo](https://github.com/smoorjani/LA-Crime-Analysis).
+Submitted for CS126 Software Design Studio and coded from scratch in C++. See the code [here](https://github.com/smoorjani/Chrome-Dino-Genetic-Algorithm).

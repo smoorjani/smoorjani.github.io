@@ -23,13 +23,23 @@ This past summer, I interned at Meta on the Ads Responsibility and Privacy team 
 News
 ======
 **Sept 2022:** Serving as subreviewer for [WSDM 2022](https://www.wsdm-conference.org/2022/).
+
 **Sept 2022:** I was announced as a [Siebel Scholar](https://cs.illinois.edu/news/five-illinois-cs-students-named-to-2023-siebel-scholars-class) for the Class of 2023.
+
 **August 2022:** Serving as reviewer for [EMNLP 2022](https://2022.emnlp.org/) and subreviewer for [SIGKDD 2022](https://www.kdd.org/).
+
 **May 2022:** Summer at [Meta](https://www.meta.com/).
+
 **May 2022:** Serving as subreviewer for [CIKM 2022](https://www.cikm2022.org/).
+
 **April 2022:** Accepted UIUC CS MS offer. Joining in Fall 2022.
+
 **May 2021:** Summer at [Meta](https://www.meta.com/).
+
 **May 2021:** Joined [CDL](https://crowddynamicslab.github.io/) as an undergraduate researcher!
+
 **August 2020:** Joined [IBM C3SR](https://www.c3sr.com/) as an undergraduate researcher!
+
 **May 2020:** Summer at [Capital One](https://www.capitalone.com/).
+
 **April 2020:** Won the First Place Prize in the Caterpillar Anomaly Detection in IoT Challenge.

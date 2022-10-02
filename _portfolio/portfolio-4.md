@@ -1,6 +1,6 @@
 ---
 title: "Schedule Generator by OurSQL"
-excerpt: "Submitted for CS 411 <br/><img src='/images/oursql.png'>"
+excerpt: "Submitted for CS 411"
 collection: portfolio
 ---
 

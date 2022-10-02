@@ -1,6 +1,6 @@
 ---
 title: "Caterpillar IoT ML Analytics Challenge"
-excerpt: "Submitted for HackIllinois 2020<br/><img src='/images/caterpillar.jpg'>"
+excerpt: "Submitted for HackIllinois 2020"
 collection: portfolio
 ---
 
