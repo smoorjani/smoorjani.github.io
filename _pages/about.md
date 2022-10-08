@@ -24,24 +24,26 @@ This past summer, I interned at [Meta](https://www.meta.com/) on the Ads Respons
 
 Timeline
 ======
-**Sept 2022:** Serving as subreviewer for [WSDM 2022](https://www.wsdm-conference.org/2022/).
+**Oct 2022:** Our paper on Style Infusion was accepted to Findings of ACL: [EMNLP 2022](https://2022.emnlp.org/)!
 
-**Sept 2022:** I was announced as a [Siebel Scholar](https://cs.illinois.edu/news/five-illinois-cs-students-named-to-2023-siebel-scholars-class) for the Class of 2023.
+**Sep 2022:** Serving as subreviewer for [WSDM 2022](https://www.wsdm-conference.org/2022/).
 
-**August 2022:** Serving as reviewer for [EMNLP 2022](https://2022.emnlp.org/) and subreviewer for [SIGKDD 2022](https://www.kdd.org/).
+**Sep 2022:** I was announced as a [Siebel Scholar](https://cs.illinois.edu/news/five-illinois-cs-students-named-to-2023-siebel-scholars-class) for the Class of 2023.
+
+**Aug 2022:** Serving as reviewer for [EMNLP 2022](https://2022.emnlp.org/) and subreviewer for [SIGKDD 2022](https://www.kdd.org/).
 
 **May 2022:** Summer at [Meta](https://www.meta.com/).
 
 **May 2022:** Serving as subreviewer for [CIKM 2022](https://www.cikm2022.org/).
 
-**April 2022:** Accepted UIUC CS MS offer! Joining in Fall 2022.
+**Apr 2022:** Accepted UIUC CS MS offer! Joining in Fall 2022.
 
 **May 2021:** Summer at [Meta](https://www.meta.com/).
 
 **May 2021:** Joined [CDL](https://crowddynamicslab.github.io/) as an undergraduate researcher!
 
-**August 2020:** Joined [IBM C3SR](https://www.c3sr.com/) as an undergraduate researcher!
+**Aug 2020:** Joined [IBM C3SR](https://www.c3sr.com/) as an undergraduate researcher!
 
 **May 2020:** Summer at [Capital One](https://www.capitalone.com/).
 
-**April 2020:** Won the First Place Prize in the Caterpillar Anomaly Detection in IoT Challenge.
+**Apr 2020:** Won the First Place Prize in the Caterpillar Anomaly Detection in IoT Challenge.
