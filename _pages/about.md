@@ -10,11 +10,11 @@ redirect_from:
 
 I am a MS student in Computer Science at [UIUC](https://illinois.edu/) advised by [Hari Sundaram](http://sundaram.cs.illinois.edu/). I graduated from UIUC with a Bachelor's in Computer Science. I am broadly interested in natural language generation, specifically the control of particular aspects of generated text. My recent work involves infusing styles that are not quantifiable (e.g. memorability, persuasion) into text.
 
-See my updated resume [here](https://docs.google.com/document/d/19UJ3voazJUr8UzZZLHy5K9lLix1CSU6U7LB_RrSOP6U/edit#).
+See my updated resume [here](https://docs.google.com/document/d/19UJ3voazJUr8UzZZLHy5K9lLix1CSU6U7LB_RrSOP6U/edit#). See my CV [here](http://smoorjani.github.io/files/Curriculum_Vitae.pdf).
 
 Research
 ======
-I have been working with [Hari Sundaram](http://sundaram.cs.illinois.edu/) in the [Crowd Dynamics Lab](https://crowddynamicslab.github.io/) since May 2021. We operate at the intersection of natural langauge processing and advertising theory. Broadly, we hope to be able to generate more appealing and interpretable science to combat the spread of scientific misinformation.
+I have been working with [Hari Sundaram](http://sundaram.cs.illinois.edu/) and [Ewa Maslowska](https://media.illinois.edu/advertising/maslowska-ewa) in the [Crowd Dynamics Lab](https://crowddynamicslab.github.io/) since May 2021. We operate at the intersection of natural langauge processing and advertising theory. Broadly, we hope to be able to generate more appealing and interpretable science to combat the spread of scientific misinformation.
 
 I have also been working in the [IMPACT group](http://impact.crhc.illinois.edu/), directed by [Wen-mei Hwu](https://ece.illinois.edu/about/directory/faculty/w-hwu), since August 2020. I joined through the [Undergraduate Research in AI](https://students.grainger.illinois.edu/research/c3sr/) program hosted by the [IBM-Illinois Center for Cognitive Computing Research (C3SR)](https://www.c3sr.com/). We are working on integrating a [faster sparse matrix multiplication kernel](https://arxiv.org/pdf/2007.14152.pdf) into [PyTorch](https://pytorch.org/) to interface with large language models like BERT. I was advised by [Vikram Sharma Mailthody](https://msharmavikram.github.io/) and [Mert Hidayetoglu](https://merthidayetoglu.github.io/).
 
