@@ -10,7 +10,7 @@ locale                   : "en-US"
 title                    : "Samraj's Website"
 title_separator          : "-"
 name                     : &name "Samraj Moorjani"
-description              : &description "MS Student at UIUC"
+description              : &description "SWE @ Databricks"
 url                      : https://smoorjani.github.io # the base hostname & protocol for your site e.g. "https://mmistakes.github.io"
 baseurl                  : "" # the subpath of your site, e.g. "/blog"
 repository               : "smoorjani/smoorjani.github.io"
@@ -82,11 +82,11 @@ analytics:
 author:
   name             : "Samraj Moorjani"
   avatar           : "profile.png"
-  bio              : "MSCS Student at UIUC in Natural Language Generation. Graduate Researcher at CDL and IMPACT."
+  bio              : "SWE @ Databricks | BS+MS @ UIUC | Siebel Scholar 2023"
   location         : "Champaign, IL"
-  employer         :
+  employer         : Databricks
   pubmed           : 
-  googlescholar    : 
+  googlescholar    : https://scholar.google.com/citations?user=0LWkkiEAAAAJ&hl=en
   email            : samrajm2@illinois.edu
   researchgate     :  # example: "https://www.researchgate.net/profile/yourprofile"
   uri              :
