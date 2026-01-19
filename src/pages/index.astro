@@ -1,0 +1,610 @@
+---
+import Layout from '../layouts/Layout.astro';
+import work from '../data/work.json';
+import projects from '../data/projects.json';
+import blogs from '../data/blogs.json';
+import talks from '../data/talks.json';
+---
+
+<Layout title="Samraj Moorjani">
+  <canvas id="particle-canvas"></canvas>
+
+  <section class="hero">
+    <h1>
+      Hey, I'm <span class="gradient">Samraj</span>
+    </h1>
+    <p class="hero-description">
+      I'm a software engineer at <a href="https://databricks.com" target="_blank">Databricks</a> working on AI Agent Evaluation in <a href="https://mlflow.org" target="_blank">MLflow</a>. Before that, I graduated from UIUC with my BS+MS, interned at Meta, AppLovin, and Capital One.
+    </p>
+    <div class="hero-links">
+      <a href="#work" class="btn btn-primary">View my work →</a>
+      <a href="mailto:samraj.moorjani@databricks.com" class="btn btn-secondary">Get in touch</a>
+    </div>
+
+    <div class="scroll-indicator">
+      <span>scroll</span>
+      <span>↓</span>
+    </div>
+  </section>
+
+  <section id="work">
+    <div class="section-header">
+      <h2 class="section-title">Experience</h2>
+      <a href="/work" class="section-link">View all →</a>
+    </div>
+    <div class="work-grid">
+      {work.featured.map((job) => (
+        <div class="work-card">
+          <div class="work-card-header">
+            <span class="work-company">{job.company}</span>
+            <span class="work-date">{job.date}</span>
+          </div>
+          <p class="work-role">{job.role}</p>
+          <p class="work-description">{job.description}</p>
+          {job.links.length > 0 && (
+            <div class="work-links">
+              {job.links.map((link) => (
+                <a href={link.url} class="work-link" target="_blank">{link.label}</a>
+              ))}
+            </div>
+          )}
+        </div>
+      ))}
+    </div>
+  </section>
+
+  <section id="talks">
+    <div class="section-header">
+      <h2 class="section-title">Talks</h2>
+      <a href="/talks" class="section-link">View all →</a>
+    </div>
+    <div class="talks-grid">
+      {talks.filter(talk => talk.event !== "MLflow Community Meetup").map((talk) => (
+        <a href={talk.url} class="talk-card" target="_blank">
+          <div class="talk-thumbnail">
+            <img src={`https://img.youtube.com/vi/${talk.videoId}/mqdefault.jpg`} alt={talk.title} />
+            <div class="play-icon">▶</div>
+          </div>
+          <div class="talk-content">
+            <h3 class="talk-title">{talk.title}</h3>
+            <p class="talk-meta">{talk.event} · {talk.date}</p>
+          </div>
+        </a>
+      ))}
+    </div>
+  </section>
+
+  <section id="writing">
+    <div class="section-header">
+      <h2 class="section-title">Writing</h2>
+      <a href="https://scholar.google.com/citations?user=0LWkkiEAAAAJ&hl=en" class="section-link" target="_blank">Google Scholar →</a>
+    </div>
+
+    <h3 class="subsection-title">Publications</h3>
+    <div class="publications-list">
+      <a href="https://aclanthology.org/2024.eacl-long.80/" class="publication-item" target="_blank">
+        <span class="publication-title">CEV-LM: Controlled Edit Vector Language Model for Shaping Natural Language Generations</span>
+        <span class="publication-meta">EACL 2024</span>
+      </a>
+      <a href="https://arxiv.org/abs/2305.14750" class="publication-item" target="_blank">
+        <span class="publication-title">Mastering the ABCDs of Complex Questions: Answer-Based Claim Decomposition for Fine-grained Self-Evaluation</span>
+        <span class="publication-meta">arXiv 2023</span>
+      </a>
+      <a href="https://aclanthology.org/2022.findings-emnlp.138/" class="publication-item" target="_blank">
+        <span class="publication-title">Audience-Centric Natural Language Generation via Style Infusion</span>
+        <span class="publication-meta">Findings of EMNLP 2022</span>
+      </a>
+    </div>
+
+    <h3 class="subsection-title">Blog Posts</h3>
+    <div class="blog-list">
+      {blogs.map((blog) => (
+        <a href={blog.url} class="blog-item" target="_blank">
+          <span class="blog-title">{blog.title}</span>
+          <span class="blog-meta">{blog.date} · {blog.source}</span>
+        </a>
+      ))}
+    </div>
+  </section>
+
+  <section id="projects">
+    <div class="section-header">
+      <h2 class="section-title">Projects</h2>
+      <a href="/projects" class="section-link">View all →</a>
+    </div>
+    <div class="projects-grid">
+      {projects.featured.map((project) => (
+        <a href={project.url} class="project-card" target="_blank">
+          <div class="project-image">
+            {project.image ? (
+              <img src={project.image} alt={project.title} />
+            ) : (
+              <span>[ {project.title} ]</span>
+            )}
+          </div>
+          <div class="project-content">
+            <h3 class="project-title">{project.title}</h3>
+            <p class="project-description">{project.description}</p>
+            <div class="project-tags">
+              {project.tags.map((tag) => (
+                <span class="tag">{tag}</span>
+              ))}
+            </div>
+          </div>
+        </a>
+      ))}
+    </div>
+  </section>
+</Layout>
+
+<style>
+  #particle-canvas {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    pointer-events: none;
+    z-index: 9999;
+  }
+
+  :global(body) {
+    cursor: none !important;
+  }
+
+  :global(a), :global(button), :global(.btn) {
+    cursor: none !important;
+  }
+
+  main {
+    position: relative;
+    z-index: 1;
+  }
+
+  nav {
+    z-index: 100;
+  }
+
+  .hero, section, footer {
+    position: relative;
+    z-index: 1;
+  }
+</style>
+
+<script>
+  const canvas = document.getElementById('particle-canvas') as HTMLCanvasElement;
+  const ctx = canvas.getContext('2d')!;
+
+  interface Star {
+    x: number;
+    y: number;
+    radius: number;
+    brightness: number;
+    twinkleSpeed: number;
+    twinklePhase: number;
+  }
+
+  interface Particle {
+    x: number;
+    y: number;
+    vx: number;
+    vy: number;
+    radius: number;
+    color: string;
+    alpha: number;
+    decay: number;
+    type?: string;
+  }
+
+  interface Shockwave {
+    x: number;
+    y: number;
+    radius: number;
+    maxRadius: number;
+    alpha: number;
+    lineWidth: number;
+    color: string;
+    speed: number;
+  }
+
+  interface Nebula {
+    x: number;
+    y: number;
+    radius: number;
+    maxRadius: number;
+    alpha: number;
+    colors: string[];
+  }
+
+  interface Flash {
+    x: number;
+    y: number;
+    alpha: number;
+    radius: number;
+  }
+
+  interface CometTrail {
+    x: number;
+    y: number;
+    alpha: number;
+    radius: number;
+  }
+
+  const stars: Star[] = [];
+  const particles: Particle[] = [];
+  const shockwaves: Shockwave[] = [];
+  const nebulae: Nebula[] = [];
+  const flashes: Flash[] = [];
+  const cometTrails: CometTrail[] = [];
+
+  let mouseX = 0;
+  let mouseY = 0;
+  let lastMouseX = 0;
+  let lastMouseY = 0;
+
+  function resizeCanvas() {
+    canvas.width = window.innerWidth * window.devicePixelRatio;
+    canvas.height = window.innerHeight * window.devicePixelRatio;
+    ctx.scale(window.devicePixelRatio, window.devicePixelRatio);
+    generateStars();
+  }
+
+  function generateStars() {
+    stars.length = 0;
+    const width = window.innerWidth;
+    const height = window.innerHeight;
+    const starCount = Math.floor((width * height) / 6000);
+
+    for (let i = 0; i < starCount; i++) {
+      stars.push({
+        x: Math.random() * width,
+        y: Math.random() * height,
+        radius: Math.random() < 0.85 ? 0.3 + Math.random() * 0.8 : 1 + Math.random() * 1.5,
+        brightness: 0.2 + Math.random() * 0.8,
+        twinkleSpeed: 0.008 + Math.random() * 0.025,
+        twinklePhase: Math.random() * Math.PI * 2,
+      });
+    }
+  }
+
+  resizeCanvas();
+  window.addEventListener('resize', () => {
+    ctx.setTransform(1, 0, 0, 1, 0, 0);
+    resizeCanvas();
+  });
+
+  function createSupernova(x: number, y: number) {
+    flashes.push({ x, y, alpha: 0.9, radius: Math.max(window.innerWidth, window.innerHeight) });
+
+    for (let i = 0; i < 30; i++) {
+      const angle = Math.random() * Math.PI * 2;
+      const speed = 0.5 + Math.random() * 2;
+      particles.push({
+        x, y,
+        vx: Math.cos(angle) * speed,
+        vy: Math.sin(angle) * speed,
+        radius: 4 + Math.random() * 8,
+        color: '#ffffff',
+        alpha: 1,
+        decay: 0.025,
+        type: 'core',
+      });
+    }
+
+    for (let i = 0; i < 50; i++) {
+      const angle = (Math.PI * 2 * i) / 50 + Math.random() * 0.2;
+      const speed = 2 + Math.random() * 4;
+      particles.push({
+        x, y,
+        vx: Math.cos(angle) * speed,
+        vy: Math.sin(angle) * speed,
+        radius: 2 + Math.random() * 4,
+        color: Math.random() < 0.5 ? '#e0f0ff' : '#a0d4ff',
+        alpha: 1,
+        decay: 0.012,
+        type: 'inner',
+      });
+    }
+
+    for (let i = 0; i < 80; i++) {
+      const angle = (Math.PI * 2 * i) / 80 + Math.random() * 0.4;
+      const speed = 4 + Math.random() * 6;
+      const colors = ['#fffbe0', '#fff3b0', '#ffd700', '#ffb347', '#ffa500'];
+      particles.push({
+        x, y,
+        vx: Math.cos(angle) * speed,
+        vy: Math.sin(angle) * speed,
+        radius: 1.5 + Math.random() * 3,
+        color: colors[Math.floor(Math.random() * colors.length)],
+        alpha: 1,
+        decay: 0.006 + Math.random() * 0.006,
+        type: 'plasma',
+      });
+    }
+
+    for (let i = 0; i < 100; i++) {
+      const angle = Math.random() * Math.PI * 2;
+      const speed = 6 + Math.random() * 10;
+      const colors = ['#ff6b35', '#ff4444', '#ff6666', '#e63946', '#d62828'];
+      particles.push({
+        x, y,
+        vx: Math.cos(angle) * speed,
+        vy: Math.sin(angle) * speed,
+        radius: 1 + Math.random() * 2.5,
+        color: colors[Math.floor(Math.random() * colors.length)],
+        alpha: 0.9,
+        decay: 0.004 + Math.random() * 0.006,
+        type: 'ejecta',
+      });
+    }
+
+    for (let i = 0; i < 60; i++) {
+      const angle = Math.random() * Math.PI * 2;
+      const speed = 10 + Math.random() * 15;
+      particles.push({
+        x, y,
+        vx: Math.cos(angle) * speed,
+        vy: Math.sin(angle) * speed,
+        radius: 0.3 + Math.random() * 1,
+        color: Math.random() < 0.3 ? '#ffffff' : '#ffcc00',
+        alpha: 0.8,
+        decay: 0.015 + Math.random() * 0.02,
+        type: 'debris',
+      });
+    }
+
+    nebulae.push({
+      x, y,
+      radius: 20,
+      maxRadius: 200 + Math.random() * 150,
+      alpha: 0.6,
+      colors: ['#ff6b6b', '#ffa07a', '#9b59b6', '#3498db', '#1abc9c'],
+    });
+
+    shockwaves.push({
+      x, y, radius: 5, maxRadius: 300, alpha: 1, lineWidth: 4, color: '#ffffff', speed: 8,
+    });
+    shockwaves.push({
+      x, y, radius: 5, maxRadius: 350, alpha: 0.7, lineWidth: 2, color: '#ffd700', speed: 6,
+    });
+    shockwaves.push({
+      x, y, radius: 5, maxRadius: 400, alpha: 0.5, lineWidth: 3, color: '#ff6b35', speed: 4,
+    });
+    shockwaves.push({
+      x, y, radius: 5, maxRadius: 450, alpha: 0.3, lineWidth: 2, color: '#9b59b6', speed: 3,
+    });
+  }
+
+  document.addEventListener('click', (e) => {
+    const target = e.target as HTMLElement;
+    // Don't trigger supernova when clicking on interactive elements
+    if (target.closest('a, button, .btn, .work-card, .project-card, .talk-card, .blog-item, .publication-item, input, textarea, select, nav')) {
+      return;
+    }
+    createSupernova(e.clientX, e.clientY);
+  });
+
+  document.addEventListener('mousemove', (e) => {
+    lastMouseX = mouseX;
+    lastMouseY = mouseY;
+    mouseX = e.clientX;
+    mouseY = e.clientY;
+
+    // Create comet trail particles
+    const dx = mouseX - lastMouseX;
+    const dy = mouseY - lastMouseY;
+    const speed = Math.sqrt(dx * dx + dy * dy);
+
+    if (speed > 2) {
+      // More particles when moving faster
+      const trailCount = Math.min(Math.floor(speed / 3), 8);
+      for (let i = 0; i < trailCount; i++) {
+        const t = i / trailCount;
+        const trailX = lastMouseX + dx * t + (Math.random() - 0.5) * 8;
+        const trailY = lastMouseY + dy * t + (Math.random() - 0.5) * 8;
+        cometTrails.push({
+          x: trailX,
+          y: trailY,
+          alpha: 0.8 - t * 0.3,
+          radius: 2 + Math.random() * 3,
+        });
+      }
+    }
+  });
+
+  function draw() {
+    const width = window.innerWidth;
+    const height = window.innerHeight;
+
+    ctx.clearRect(0, 0, width, height);
+
+    // Draw stars
+    for (const star of stars) {
+      star.twinklePhase += star.twinkleSpeed;
+      const twinkle = 0.4 + Math.sin(star.twinklePhase) * 0.6;
+      const currentBrightness = star.brightness * twinkle;
+
+      if (star.radius > 1) {
+        ctx.beginPath();
+        const gradient = ctx.createRadialGradient(star.x, star.y, 0, star.x, star.y, star.radius * 5);
+        gradient.addColorStop(0, `rgba(150, 180, 255, ${currentBrightness * 0.2})`);
+        gradient.addColorStop(1, 'rgba(150, 180, 255, 0)');
+        ctx.fillStyle = gradient;
+        ctx.arc(star.x, star.y, star.radius * 5, 0, Math.PI * 2);
+        ctx.fill();
+      }
+
+      ctx.beginPath();
+      ctx.fillStyle = `rgba(255, 255, 255, ${currentBrightness})`;
+      ctx.arc(star.x, star.y, star.radius, 0, Math.PI * 2);
+      ctx.fill();
+    }
+
+    // Draw nebulae
+    for (let i = nebulae.length - 1; i >= 0; i--) {
+      const n = nebulae[i];
+      n.radius += 1.5;
+      n.alpha -= 0.003;
+
+      if (n.alpha <= 0 || n.radius >= n.maxRadius) {
+        nebulae.splice(i, 1);
+        continue;
+      }
+
+      const gradient = ctx.createRadialGradient(n.x, n.y, 0, n.x, n.y, n.radius);
+      gradient.addColorStop(0, `rgba(255, 200, 150, ${n.alpha * 0.3})`);
+      gradient.addColorStop(0.3, `rgba(255, 100, 100, ${n.alpha * 0.2})`);
+      gradient.addColorStop(0.6, `rgba(150, 100, 200, ${n.alpha * 0.15})`);
+      gradient.addColorStop(0.8, `rgba(100, 150, 255, ${n.alpha * 0.1})`);
+      gradient.addColorStop(1, 'rgba(0, 0, 50, 0)');
+
+      ctx.fillStyle = gradient;
+      ctx.beginPath();
+      ctx.arc(n.x, n.y, n.radius, 0, Math.PI * 2);
+      ctx.fill();
+    }
+
+    // Draw flashes
+    for (let i = flashes.length - 1; i >= 0; i--) {
+      const f = flashes[i];
+      f.alpha -= 0.06;
+
+      if (f.alpha <= 0) {
+        flashes.splice(i, 1);
+        continue;
+      }
+
+      const gradient = ctx.createRadialGradient(f.x, f.y, 0, f.x, f.y, f.radius);
+      gradient.addColorStop(0, `rgba(255, 255, 255, ${f.alpha})`);
+      gradient.addColorStop(0.1, `rgba(255, 250, 220, ${f.alpha * 0.6})`);
+      gradient.addColorStop(0.3, `rgba(255, 200, 150, ${f.alpha * 0.2})`);
+      gradient.addColorStop(1, 'rgba(255, 200, 150, 0)');
+
+      ctx.fillStyle = gradient;
+      ctx.fillRect(0, 0, width, height);
+    }
+
+    // Draw shockwaves
+    for (let i = shockwaves.length - 1; i >= 0; i--) {
+      const sw = shockwaves[i];
+      sw.radius += sw.speed;
+      sw.alpha -= 0.008;
+
+      if (sw.alpha <= 0 || sw.radius >= sw.maxRadius) {
+        shockwaves.splice(i, 1);
+        continue;
+      }
+
+      ctx.beginPath();
+      ctx.strokeStyle = sw.color;
+      ctx.globalAlpha = sw.alpha;
+      ctx.lineWidth = sw.lineWidth;
+      ctx.shadowColor = sw.color;
+      ctx.shadowBlur = 25;
+      ctx.arc(sw.x, sw.y, sw.radius, 0, Math.PI * 2);
+      ctx.stroke();
+      ctx.globalAlpha = 1;
+      ctx.shadowBlur = 0;
+    }
+
+    // Draw comet trails
+    for (let i = cometTrails.length - 1; i >= 0; i--) {
+      const trail = cometTrails[i];
+      trail.alpha -= 0.04;
+      trail.radius *= 0.95;
+
+      if (trail.alpha <= 0 || trail.radius < 0.3) {
+        cometTrails.splice(i, 1);
+        continue;
+      }
+
+      // Draw glow
+      const glowGradient = ctx.createRadialGradient(
+        trail.x, trail.y, 0,
+        trail.x, trail.y, trail.radius * 4
+      );
+      glowGradient.addColorStop(0, `rgba(100, 180, 255, ${trail.alpha * 0.4})`);
+      glowGradient.addColorStop(0.5, `rgba(60, 130, 246, ${trail.alpha * 0.2})`);
+      glowGradient.addColorStop(1, 'rgba(60, 130, 246, 0)');
+      ctx.fillStyle = glowGradient;
+      ctx.beginPath();
+      ctx.arc(trail.x, trail.y, trail.radius * 4, 0, Math.PI * 2);
+      ctx.fill();
+
+      // Draw core
+      ctx.fillStyle = `rgba(220, 240, 255, ${trail.alpha})`;
+      ctx.beginPath();
+      ctx.arc(trail.x, trail.y, trail.radius, 0, Math.PI * 2);
+      ctx.fill();
+    }
+
+    // Draw comet head at cursor
+    const dx = mouseX - lastMouseX;
+    const dy = mouseY - lastMouseY;
+    const speed = Math.sqrt(dx * dx + dy * dy);
+    const cometSize = Math.min(6 + speed * 0.3, 12);
+
+    // Comet glow
+    const cometGlow = ctx.createRadialGradient(mouseX, mouseY, 0, mouseX, mouseY, cometSize * 5);
+    cometGlow.addColorStop(0, 'rgba(100, 180, 255, 0.5)');
+    cometGlow.addColorStop(0.3, 'rgba(60, 130, 246, 0.3)');
+    cometGlow.addColorStop(0.6, 'rgba(60, 130, 246, 0.1)');
+    cometGlow.addColorStop(1, 'rgba(60, 130, 246, 0)');
+    ctx.fillStyle = cometGlow;
+    ctx.beginPath();
+    ctx.arc(mouseX, mouseY, cometSize * 5, 0, Math.PI * 2);
+    ctx.fill();
+
+    // Comet core
+    const cometCore = ctx.createRadialGradient(mouseX, mouseY, 0, mouseX, mouseY, cometSize);
+    cometCore.addColorStop(0, '#ffffff');
+    cometCore.addColorStop(0.3, '#e0f0ff');
+    cometCore.addColorStop(0.7, '#60a5fa');
+    cometCore.addColorStop(1, '#3b82f6');
+    ctx.fillStyle = cometCore;
+    ctx.beginPath();
+    ctx.arc(mouseX, mouseY, cometSize, 0, Math.PI * 2);
+    ctx.fill();
+
+    // Draw particles
+    for (let i = particles.length - 1; i >= 0; i--) {
+      const p = particles[i];
+
+      p.x += p.vx;
+      p.y += p.vy;
+      p.vx *= 0.985;
+      p.vy *= 0.985;
+      p.alpha -= p.decay;
+
+      if (p.alpha <= 0) {
+        particles.splice(i, 1);
+        continue;
+      }
+
+      ctx.save();
+      ctx.globalAlpha = p.alpha;
+      ctx.shadowColor = p.color;
+      ctx.shadowBlur = p.type === 'core' ? 30 : p.type === 'inner' ? 20 : 10;
+
+      ctx.fillStyle = p.color;
+      ctx.beginPath();
+      ctx.arc(p.x, p.y, p.radius, 0, Math.PI * 2);
+      ctx.fill();
+
+      if (p.type === 'core' || p.type === 'inner') {
+        ctx.shadowBlur = 0;
+        ctx.fillStyle = '#ffffff';
+        ctx.globalAlpha = p.alpha * 0.8;
+        ctx.beginPath();
+        ctx.arc(p.x, p.y, p.radius * 0.4, 0, Math.PI * 2);
+        ctx.fill();
+      }
+
+      ctx.restore();
+    }
+
+    requestAnimationFrame(draw);
+  }
+
+  draw();
+</script>

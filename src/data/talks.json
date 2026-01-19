@@ -1,0 +1,34 @@
+[
+  {
+    "title": "Accelerate High-Quality Agent Development with MLflow",
+    "event": "AI Dev 25 x NYC",
+    "date": "November 2025",
+    "url": "https://www.youtube.com/watch?v=qOFKpHEm2zg",
+    "videoId": "qOFKpHEm2zg",
+    "description": "Building high-quality agents is one of the biggest challenges teams face today. Learn how to streamline this process with MLflow to enable rapid development of high-quality agents."
+  },
+  {
+    "title": "How to Test GenAI Agents in Production",
+    "event": "VectorLab",
+    "date": "November 2025",
+    "url": "https://www.youtube.com/watch?v=J92rI0IUmAI",
+    "videoId": "J92rI0IUmAI",
+    "description": "Dive into GenAI Agent Quality with MLflow Tracing & Evaluation. Learn why comprehensive testing is non-negotiable for GenAI applications."
+  },
+  {
+    "title": "Claude Code & Claude Agent SDK Tracing",
+    "event": "MLflow Community Meetup",
+    "date": "November 2025",
+    "url": "https://www.youtube.com/watch?v=Y4we1zI916o",
+    "videoId": "Y4we1zI916o",
+    "description": "Dive into Claude Code & Claude Agent SDK Tracing and OTEL Support for Tracing at the November MLflow Community Meetup."
+  },
+  {
+    "title": "Creating LLM Judges to Measure Domain-Specific Agent Quality",
+    "event": "Data + AI Summit 2025",
+    "date": "June 2025",
+    "url": "https://www.youtube.com/watch?v=PZBUaVxdY0U",
+    "videoId": "PZBUaVxdY0U",
+    "description": "Measuring the effectiveness of domain-specific AI agents requires specialized evaluation frameworks. This session explores methodologies for assessing agent quality across specialized knowledge domains."
+  }
+]

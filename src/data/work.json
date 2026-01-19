@@ -1,0 +1,63 @@
+{
+  "featured": [
+    {
+      "company": "Databricks",
+      "role": "Software Engineer",
+      "date": "2023 - Present",
+      "description": "Building the evaluation and observability stack for AI agents. Leading development of LLM judges, tracing infrastructure, and quality metrics. Previously worked on ML model and data monitoring.",
+      "links": [
+        { "label": "MLflow", "url": "https://mlflow.org" },
+        { "label": "Lakehouse Monitoring", "url": "https://www.databricks.com/product/machine-learning/lakehouse-monitoring" }
+      ]
+    },
+    {
+      "company": "Crowd Dynamics Lab",
+      "role": "Research Assistant — UIUC",
+      "date": "2021 - 2023",
+      "description": "Worked on controllable NLG at the intersection of natural language processing and advertising theory. Awarded Siebel Scholar 2023. Advised by Hari Sundaram and Ewa Maslowska.",
+      "links": [
+        { "label": "Lab Website", "url": "https://crowddynamicslab.github.io/" }
+      ]
+    },
+    {
+      "company": "IBM-Illinois C3SR",
+      "role": "Research Assistant — IMPACT Group",
+      "date": "2020 - 2022",
+      "description": "Worked on integrating faster sparse matrix multiplication kernels into PyTorch to accelerate large language models like BERT. Advised by Wen-mei Hwu.",
+      "links": [
+        { "label": "C3SR", "url": "https://www.c3sr.com/" },
+        { "label": "IMPACT Group", "url": "http://impact.crhc.illinois.edu/" }
+      ]
+    }
+  ],
+  "other": [
+    {
+      "company": "AppLovin",
+      "role": "Research Science Intern",
+      "date": "Summer 2023",
+      "description": "Worked on the Research Science team monitoring data pipeline and model health. Built ranking models for ad optimization.",
+      "links": []
+    },
+    {
+      "company": "Meta",
+      "role": "Software Engineer Intern — Ads Responsibility",
+      "date": "Summer 2022",
+      "description": "Built multimodal ad classification systems on the Ads Responsibility and Privacy team.",
+      "links": []
+    },
+    {
+      "company": "Meta",
+      "role": "Software Engineer Intern — AI Commerce",
+      "date": "Summer 2021",
+      "description": "Worked on multilingual language models for the AI Commerce Multimodal team.",
+      "links": []
+    },
+    {
+      "company": "Capital One",
+      "role": "Software Engineer Intern",
+      "date": "Summer 2020",
+      "description": "Built enterprise NER systems on the NLP services team.",
+      "links": []
+    }
+  ]
+}

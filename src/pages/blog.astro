@@ -1,0 +1,22 @@
+---
+import Layout from '../layouts/Layout.astro';
+import blogs from '../data/blogs.json';
+---
+
+<Layout title="Writing - Samraj Moorjani">
+  <div class="page-header">
+    <h1>Writing</h1>
+    <p>Blog posts about LLM judges, agent quality, and AI evaluation.</p>
+  </div>
+
+  <section>
+    <div class="blog-list">
+      {blogs.map((blog) => (
+        <a href={blog.url} class="blog-item" target="_blank">
+          <span class="blog-title">{blog.title}</span>
+          <span class="blog-meta">{blog.date} · {blog.source}</span>
+        </a>
+      ))}
+    </div>
+  </section>
+</Layout>

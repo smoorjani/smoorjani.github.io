@@ -1,0 +1,38 @@
+[
+  {
+    "title": "Building Custom LLM Judges for AI Agent Accuracy",
+    "url": "https://www.databricks.com/blog/building-custom-llm-judges-ai-agent-accuracy",
+    "source": "Databricks",
+    "date": "November 4, 2025"
+  },
+  {
+    "title": "From Pilot to Production with Custom Judges",
+    "url": "https://www.databricks.com/blog/pilot-production-custom-judges",
+    "source": "Databricks",
+    "date": "November 4, 2025"
+  },
+  {
+    "title": "Build High-Quality Domain-Specific Agents at 95% Lower Cost",
+    "url": "https://www.databricks.com/blog/build-high-quality-domain-specific-agents-95-lower-cost",
+    "source": "Databricks",
+    "date": "October 15, 2025"
+  },
+  {
+    "title": "MLflow Autolog for Claude Agents SDK",
+    "url": "https://mlflow.org/blog/mlflow-autolog-claude-agents-sdk",
+    "source": "MLflow",
+    "date": "October 15, 2025"
+  },
+  {
+    "title": "Judging Confidence: Meet PGRM, A Promptable Reward Model",
+    "url": "https://www.databricks.com/blog/judging-confidence-meet-pgrm-promptable-reward-model",
+    "source": "Databricks",
+    "date": "August 12, 2025"
+  },
+  {
+    "title": "Significant Improvements to Built-in LLM Judges",
+    "url": "https://www.databricks.com/blog/databricks-announces-significant-improvements-built-llm-judges-agent-evaluation",
+    "source": "Databricks",
+    "date": "September 24, 2024"
+  }
+]

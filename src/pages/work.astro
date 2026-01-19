@@ -1,0 +1,61 @@
+---
+import Layout from '../layouts/Layout.astro';
+import work from '../data/work.json';
+---
+
+<Layout title="Work - Samraj Moorjani">
+  <div class="page-header">
+    <h1>Experience</h1>
+    <p>Full-time roles, research positions, and internships.</p>
+  </div>
+
+  <section>
+    <div class="section-header">
+      <h2 class="section-title">Current & Research</h2>
+    </div>
+    <div class="work-grid">
+      {work.featured.map((job) => (
+        <div class="work-card">
+          <div class="work-card-header">
+            <span class="work-company">{job.company}</span>
+            <span class="work-date">{job.date}</span>
+          </div>
+          <p class="work-role">{job.role}</p>
+          <p class="work-description">{job.description}</p>
+          {job.links.length > 0 && (
+            <div class="work-links">
+              {job.links.map((link) => (
+                <a href={link.url} class="work-link" target="_blank">{link.label}</a>
+              ))}
+            </div>
+          )}
+        </div>
+      ))}
+    </div>
+  </section>
+
+  <section>
+    <div class="section-header">
+      <h2 class="section-title">Internships</h2>
+    </div>
+    <div class="work-grid">
+      {work.other.map((job) => (
+        <div class="work-card">
+          <div class="work-card-header">
+            <span class="work-company">{job.company}</span>
+            <span class="work-date">{job.date}</span>
+          </div>
+          <p class="work-role">{job.role}</p>
+          <p class="work-description">{job.description}</p>
+          {job.links.length > 0 && (
+            <div class="work-links">
+              {job.links.map((link) => (
+                <a href={link.url} class="work-link" target="_blank">{link.label}</a>
+              ))}
+            </div>
+          )}
+        </div>
+      ))}
+    </div>
+  </section>
+</Layout>
